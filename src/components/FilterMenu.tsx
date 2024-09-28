@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   Select,
@@ -6,20 +6,20 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select";
 
 interface FilterMenuProps {
-  onFilter: (filter: string) => void
+  onFilter: (filter: string) => void;
 }
 
 export function FilterMenu({ onFilter }: FilterMenuProps) {
   return (
     <Select onValueChange={onFilter} defaultValue="all">
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger className="w-[180px] text-black">
         <SelectValue placeholder="Filter by genre" />
       </SelectTrigger>
-      <SelectContent>
-        <SelectItem value="all">All Genres</SelectItem>
+      <SelectContent className="text-black">
+        <SelectItem className="text-black" value="all">All Genres</SelectItem>
         <SelectItem value="action">Action</SelectItem>
         <SelectItem value="comedy">Comedy</SelectItem>
         <SelectItem value="drama">Drama</SelectItem>
@@ -27,5 +27,5 @@ export function FilterMenu({ onFilter }: FilterMenuProps) {
         <SelectItem value="sci-fi">Sci-Fi</SelectItem>
       </SelectContent>
     </Select>
-  )
+  );
 }

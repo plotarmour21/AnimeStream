@@ -5,7 +5,7 @@ import { Hero } from "@/components/Hero";
 import { AnimeGrid } from "@/components/AnimeGrid";
 import { SearchBar } from "@/components/SearchBar";
 import { FilterMenu } from "@/components/FilterMenu";
-import { Navbar } from "@/components/Navbar";
+
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");

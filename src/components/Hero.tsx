@@ -34,7 +34,9 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <Button size="lg">Start Watching</Button>
+          <Button variant="destructive" size="lg">
+            Start Watching
+          </Button>
         </motion.div>
       </div>
     </div>
