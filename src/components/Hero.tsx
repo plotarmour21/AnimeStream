@@ -8,7 +8,10 @@ export function Hero() {
     <div
       className="relative h-[70vh] bg-cover bg-center"
       style={{
-        backgroundImage: "url('/placeholder.svg?height=1080&width=1920')",
+        backgroundImage:
+          "url('https://utfs.io/f/XRL82CdfISnXbv9JHG3l8NYDMSCX7dUe43Ev0AuGVwx9RIg5')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-60" />
@@ -19,7 +22,7 @@ export function Hero() {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-bold mb-4"
         >
-          Welcome to AnimeStream
+          Welcome to AnimeDarshan
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
